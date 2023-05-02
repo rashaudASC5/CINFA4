@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="New Resume" content="width=device-width, initial-scale=1.0">
+    <title>CINF-100 Assignment #4</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: teal;
+        }
+        table, th, td {
+            margin-left: auto;
+            margin-right: auto;
+          border: 1px solid black;
+          background-color: azure;
+        }
+        dl {
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid black;
+            border-radius: 100px;
+            width: 500px;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            background-color: azure;
+        }
+        ul {
+            border: 1px solid black;
+            border-radius: 20px;
+            width: fit-content;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: azure;
+        }
+        div {
+            border: 2px solid black;
+            width: max-content;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 2%;
+            padding: 20px;
+            background-color: azure;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <h1>Rashaud McLean</h1>
+    <p>This is a website about my education, professional experience, and so forth</p>
+    </div>
+    <br>
+    <br>
+    <div>
+    <h2>Index</h2>
+    <p><a href="#Work">My Employment History</a></p>
+    <p><a href="#edu">My Education</a></p>
+    <p><a href="#skill">My Skills</a></p>
+    </div>
+    <br>
+    <br>
+    <table>
+        <tr>
+            <th colspan="3"><a name="Work">Employment History</a></th>
+        </tr>
+        <tr>
+            <th>Company</th>
+            <th>Job title</th>
+            <th>Years spent</th>
+        </tr>
+        <tr>
+            <td>Microsoft</td>
+            <td>Intern</td>
+            <td>2015-2017</td>
+        </tr>
+        <tr>
+            <td>Google</td>
+            <td>Software Developer</td>
+            <td>2017-2018</td>
+        </tr>
+        <tr>
+            <td>Amazon</td>
+            <td>Assistant Software Engineer</td>
+            <td>2018-2020</td>
+        </tr>
+        <tr>
+            <td>Samsung</td>
+            <td>Information Security Analyst</td>
+            <td>2020-2023</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <h2><a name="edu">My Education</a></h2>
+    <dl>
+        <dt>Brooklyn Science and Engineering Academy</dt>
+            <dd>Degree: Diploma</dd>
+            <dd><a href="https://sites.google.com/brooklynsea.org/bsea-2020/home?pli=1" target="_blank">Link to School Website</a></dd>
+        <dt>It Takes A Village Academy</dt>
+            <dd>Degree: Advanced Deploma</dd>
+            <dd><a href="https://www.itavabrooklyn.org/" target="_blank">Link to School Website</a></dd>
+        <dt>University At Albany</dt>
+            <dd>Degree: Bachelor of Cybersecurity (WIP)</dd>
+            <dd><a href="https://www.albany.edu/" target="_blank">Link to School Website</a></dd>
+    </dl>
+    <h2><a name="skill">My Skills</a></h2>
+    <ul>
+        <li>Knowledge in various coding languages such as: HTML5, CSS, JavaScript, Python</li>
+        <li>Ability to jump</li>
+        <li>Thumbs</li>
+        <li>Has been a advid coder for 5 years</li>
+    </ul>
+
+    <!--This is for my salary calculator-->
+    <div>
+        <label for="rate">Enter the houtly rate:</label>
+        <input type="number" id="hourlyrate" name="rate">
+        <br>
+        <label for="worked">Enter how many hours you worked per week:</label>
+        <input type="number" id="hoursworked" name="worked">
+        <br>
+
+        <button onclick="salary()">Submit</button>
+        <p id="salary">The yearly salary is:</p>
+        <p id="eval"></p>
+    </div>
+
+
+    <!--Assignment #4-->
+    <div>
+        <label for="duties">Enter the number of job duties you want to see:</label>
+        <input type="number" id="numduties" name="duties">
+        <br>
+        <button onclick="duties()">Submit</button>
+        <br>
+        <p id="replace"></p>
+    </div>
+
+
+
+
+    <script src="calculator(1).js"></script>
+</body>
+</html>
